@@ -1,3 +1,14 @@
 body{
     background-color: antiquewhite;
 }
+
+img {
+    width: 200px;
+}
+#drum1div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:33%
+}
