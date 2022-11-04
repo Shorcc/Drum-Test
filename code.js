@@ -79,7 +79,7 @@ function playCrash() {
     }
 }
 
-document.onkeydown = function(e) {
+document.onkeydown  = function(e) {
     if (e.key === "a"){
         playCow()
     }

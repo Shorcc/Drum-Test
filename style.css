@@ -1,10 +1,13 @@
 body{
     background-color: antiquewhite;
     justify-content: center;
+    
+ 
 }
 h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: clamp(1vw, 2vw, 3vw);
+    
 }
 img {
     position: relative;
@@ -22,3 +25,36 @@ transform: translate(-50%, -50%);
 
 padding: 10px;
 }
+#titleTxt {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 50px;
+   animation: background-pan 5s linear infinite;
+   background: linear-gradient(to right,
+   rgb(0, 213, 255),
+   rgb(0, 81, 255),
+   rgb(144, 0, 255),
+   rgb(0, 213, 255)    
+);
+background-size: 200%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+white-space: nowrap;
+}
+#titlediv {
+    padding: none;
+    margin: none;
+    position: absolute;
+    top:0%;
+    left:0;
+    width: 100vw;
+    text-align: center;
+}
+@keyframes background-pan {
+    from {
+      background-position: 0% center
+    }
+    
+    to {
+      background-position: -200% center
+    }
+  }
